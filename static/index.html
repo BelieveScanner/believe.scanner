@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Believe.Scan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 min-h-screen font-sans">
+    <header class="bg-gray-900 text-white shadow-md">
+        <div class="container mx-auto px-4 py-5 flex items-center justify-between">
+            <div>
+                <h1 class="text-3xl font-bold tracking-tight text-gray-200">Believe.Scan</h1>
+                <p class="text-sm text-gray-300 flex items-center">
+                    <span id="status-dot" class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>
+                    Connected
+                </p>
+            </div>
+            <a href="https://x.com/Believedotscan" target="_blank" class="text-gray-300 hover:scale-110 transition-transform duration-200">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+        </div>
+    </header>
+    <main class="container mx-auto px-4 py-5 max-w-4xl">
+        <div class="mb-4">
+            <h2 class="text-xl font-semibold text-gray-200">Believe.Scan Feed</h2>
+        </div>
+        <div id="loading" class="text-center text-gray-300 text-sm mb-4">Loading...</div>
+        <div class="bg-gray-700 rounded-lg shadow-sm overflow-x-auto">
+            <table class="w-full text-sm text-gray-100">
+                <thead>
+                    <tr class="bg-gray-600">
+                        <th class="p-3 text-left">Time</th>
+                        <th class="p-3 text-left">Creator</th>
+                        <th class="p-3 text-left">Token</th>
+                        <th class="p-3 text-left">Followers</th>
+                        <th class="p-3 text-left">Verified</th>
+                    </tr>
+                </thead>
+                <tbody id="tweets"></tbody>
+            </table>
+        </div>
+        <p id="tweet-count" class="text-sm text-gray-300 mt-2">Showing 0 of 0 tweets (max 100)</p>
+    </main>
+    <script src="/static/js/main.js"></script>
+</body>
+</html>

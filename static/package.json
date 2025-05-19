@@ -1,0 +1,12 @@
+{
+  "name": "launchcoin-scanner",
+  "version": "1.0.0",
+  "description": "LaunchCoin Tweet Scanner",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i static/input.css -o static/tailwind.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
